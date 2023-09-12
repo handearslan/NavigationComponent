@@ -21,9 +21,9 @@ class SonuclarFragment : Fragment(R.layout.fragment_sonuclar) {
             tvAdSoyad2.text = args.info.personalInfo.adSoyad
             tvEmail.text = args.info.personalInfo.email
             tvPhone.text = args.info.personalInfo.phone
-            tvKacYasindasiniz.text = args.info.soru1
-            tvNerelisiniz.text = args.info.soru2
-            tvMesleginizNedir.text = args.info.soru3
+            kacYasindasiniz.text = args.info.soru1
+            nerelisiniz.text = args.info.soru2
+            mesleginizNedir.text = args.info.soru3
         }
 
         binding.btnGeriDon.setOnClickListener {

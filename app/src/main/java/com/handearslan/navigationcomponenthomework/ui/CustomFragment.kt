@@ -21,9 +21,9 @@ class CustomFragment : Fragment(R.layout.fragment_custom) {
         val personalInfo = args.personelInfo
 
         binding.btnSonuclar.setOnClickListener {
-            val soru1 =binding.etKacYasindasiniz.text.toString()
-            val soru2 =binding.etNerelisiniz.text.toString()
-            val soru3 =binding.etMesleginizNedir.text.toString()
+            val soru1 =binding.kacYasindasiniz.text.toString()
+            val soru2 =binding.nerelisiniz.text.toString()
+            val soru3 =binding.mesleginizNedir.text.toString()
             val info = Info(personalInfo,soru1,soru2,soru3)
 
             val action =
