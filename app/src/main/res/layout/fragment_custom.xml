@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/ekle"
+    tools:context=".ui.CustomFragment">
+
+    <TextView
+        android:id="@+id/tv_ad_soyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Ad-Soyad:"/>
+
+    <EditText
+        android:id="@+id/tv_kac_yasindasiniz"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kaç yaşındasınız?" />
+
+    <EditText
+        android:id="@+id/tv_nerelisiniz"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nerelisiniz?" />
+
+    <EditText
+        android:id="@+id/tv_mesleginiz_nedir"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mesleğiniz nedir?" />
+
+    <Button
+        android:id="@+id/btn_sonuclar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/material_dynamic_secondary40"
+        android:text="Sonraki Sayfa"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_giris.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/girisFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bu"
+    tools:context=".ui.GirisFragment">
+
+
+    <EditText
+        android:id="@+id/et_ad_soyad"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:hint="Ad-Soyad Giriniz" />
+
+    <Button
+        android:id="@+id/btn_basla"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/material_dynamic_secondary40"
+        android:gravity="center"
+        android:text="Ankete Başla" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/ekle"
+    tools:context=".ui.KisiselBilgilerFragment">
+
+    <TextView
+        android:id="@+id/tv_ad_soyad2"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ad-Soyad:"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="50dp"
+        android:hint="Email Girin" />
+    <EditText
+        android:id="@+id/et_sifre"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="50dp"
+        android:hint="Şifre girin" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Telefon Girin" />
+
+    <Button
+        android:id="@+id/btn_devam"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:insetLeft="100dp"
+        android:insetRight="100dp"
+        android:backgroundTint="@color/material_dynamic_secondary40"
+        android:text="Sonraki Sayfa" />
+
+</LinearLayout>

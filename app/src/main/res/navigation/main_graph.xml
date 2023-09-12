@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/navigation/main_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/girisFragment">
+
+    <!-- 1. Sayfa - Giriş -->
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.handearslan.navigationcomponenthomework.ui.GirisFragment"
+        android:label="GirisFragment"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/giristoKisiselBilgiler"
+            app:destination="@id/kisiselBilgilerFragment" />
+    </fragment>
+
+    <!-- 2. Sayfa - Kişisel Bilgiler -->
+    <fragment
+        tools:layout="@layout/fragment_kisisel_bilgiler"
+        android:id="@+id/kisiselBilgilerFragment"
+        android:name="com.handearslan.navigationcomponenthomework.ui.KisiselBilgilerFragment"
+        android:label="KisiselBilgilerFragment">
+        <action
+            android:id="@+id/kisiselBilgilertoCustom"
+            app:destination="@id/customfragment" />
+        <argument
+            android:name="adSoyad"
+            app:argType="string" />
+    </fragment>
+
+    <!-- 3. Sayfa - Custom -->
+    <fragment
+        tools:layout="@layout/fragment_custom"
+        android:id="@+id/customfragment"
+        android:name="com.handearslan.navigationcomponenthomework.ui.CustomFragment"
+        android:label="CustomFragment">
+
+        <action
+            android:id="@+id/customtoresult"
+            app:destination="@id/sonuclarFragment" />
+        <argument
+            android:name="personelInfo"
+            app:argType="com.handearslan.navigationcomponenthomework.data.PersonalInfo" />
+    </fragment>
+
+    <!-- 4. Sayfa - Sonuçlar -->
+    <fragment
+        tools:layout="@layout/fragment_sonuclar"
+        android:id="@+id/sonuclarFragment"
+        android:name="com.handearslan.navigationcomponenthomework.ui.SonuclarFragment"
+        android:label="ResultsFragment" >
+        <argument
+            android:name="Info"
+            app:argType="com.handearslan.navigationcomponenthomework.data.Info" />
+        <action
+            android:id="@+id/resulttogiris"
+            app:destination="@id/girisFragment" />
+    </fragment>
+
+</navigation>
