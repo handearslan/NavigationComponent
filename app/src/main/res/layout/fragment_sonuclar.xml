@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tv_kac_yasindasiniz"
+        app:layout_constraintBottom_toTopOf="@+id/et_kac_yasindasiniz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,33 +63,33 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_ad_soyad2" />
 
     <TextView
-        android:id="@+id/tv_kac_yasindasiniz"
+        android:id="@+id/et_kac_yasindasiniz"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tv_nerelisiniz"
+        app:layout_constraintBottom_toTopOf="@+id/et_nerelisiniz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
 
     <TextView
-        android:id="@+id/tv_nerelisiniz"
+        android:id="@+id/et_nerelisiniz"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tv_mesleginiz_nedir"
+        app:layout_constraintBottom_toTopOf="@+id/et_mesleginiz_nedir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kac_yasindasiniz" />
+        app:layout_constraintTop_toBottomOf="@+id/et_kac_yasindasiniz" />
 
     <TextView
-        android:id="@+id/tv_mesleginiz_nedir"
+        android:id="@+id/et_mesleginiz_nedir"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nerelisiniz" />
+        app:layout_constraintTop_toBottomOf="@+id/et_nerelisiniz" />
 
     <Button
         android:id="@+id/btnGeriDon"
@@ -112,6 +112,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/material_dynamic_secondary40"
-        app:layout_constraintTop_toBottomOf="@+id/tv_mesleginiz_nedir" />
+        app:layout_constraintTop_toBottomOf="@+id/et_mesleginiz_nedir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
